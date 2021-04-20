@@ -1,0 +1,2 @@
+É necessário alterar os parâmetros de acesso ao BD na função ‘conecta_mysql()’ no arquivo ‘db_class.php’.
+O arquivo tarefas.sql deve ser usado para gerar o BD.
