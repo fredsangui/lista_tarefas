@@ -30,7 +30,6 @@
 	            <span class="icon-bar"></span>
 	          </button>
 	          <img src="imagens/agenda.png" />
-              <a href="home.php">Home</a>
 	        </div>
 	        
 	        <div id="navbar" class="navbar-collapse collapse">
@@ -87,7 +86,7 @@
                     </div>
 				</form>
 			</div>
-			<div class="col-md-4"><h4><a href="#">Buscar Usuário</a></h4></div>
+			<div class="col-md-4"><h4><a href="lista_usuarios.php">Buscar Usuário</a></h4></div>
 			<div class="col-md-4"></div>
 
 			<div class="clearfix"></div>

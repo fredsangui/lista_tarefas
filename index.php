@@ -61,36 +61,9 @@
 	        <div id="navbar" class="navbar-collapse collapse">
 	          <ul class="nav navbar-nav navbar-right">
 	            <li><a href="cad_usuarios.php" data-toggle="collapse" data-target="#">Usuários</a></li>
-	            <li class= "<?= $erro!=''?'open':'';?>" >
-	            	<a id="entrar" onClick="foco();" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Entrar</a>
-					<ul class="dropdown-menu" id='formulario' aria-labelledby="entrar">
-						<div class="col-md-12">
-				    		<p>Você possui uma conta?</h3>
-				    		<br />
-							<form method="post" action="validar_acesso.php" id="formLogin">
-								<div class="form-group">
-									<input type="text" class="form-control" id="campo_usuario" name="usuario" placeholder="Usuário" />
-								</div>
-								
-								<div class="form-group">
-									<input type="password" class="form-control red" id="campo_senha" name="senha" placeholder="Senha" />
-								</div>
-								
-								<button type="buttom" class="btn btn-primary" id="btn_login">Entrar</button>
+				<li><a href="cad_tarefas.php" data-toggle="collapse" data-target="#">Tarefas</a></li>
 
-								<br /><br />
-							</form>
-								<?php
-									if($erro==1){
-										echo 'Usuário ou senha invalidos.';
-									}else if($erro == 3){
-										echo 'Senha incorreta.';
-									}
-								?>
-						</form>
-				  	</ul>
-	            </li>
-	            <li><a href="sobre.php">Sobre</a></li>
+	           
 				
 	          </ul>
 	        </div><!--/.nav-collapse -->

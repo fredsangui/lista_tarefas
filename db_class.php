@@ -124,6 +124,23 @@
 			$resultado = mysqli_query($con, $sql);
 			return $resultado;
 		}
+
+		public function apaga_usuario($id){
+			$con = $this->conecta_mysql();
+			$sql = "delete from usuarios where id = $id";
+			$resultado = mysqli_query($con, $sql);
+			if($resultado){
+				$sql = "DELETE from tarefas where usuario = $id";
+				$resultado = mysqli_query($con, $sql);
+				if($resultado){
+					echo 'O registro foi excluido.';
+				}else{
+					echo 'Falha ao excluir registro de tarefa.';
+				}
+			}else
+				echo 'Falha ao excluir registro de usuário.';
+		}
+		
 	}
 	
 	//Inserir atualizar e editar tarefas

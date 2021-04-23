@@ -34,7 +34,7 @@
 	        
 	        <div id="navbar" class="navbar-collapse collapse">
 	          <ul class="nav navbar-nav navbar-right">
-              <li><a href="cad_tarefas.php">Tarefas</a></li>
+              
                 <li><a href="cad_usuarios.php">Usuarios</a></li>
 	            <li><a href="sair.php">Sair</a></li>
 	          </ul>
@@ -98,6 +98,13 @@
         <script>
 
         $(document).ready(function(){
+            //apaga formulario
+            function apaga_form(){
+                $('#sel_usuario').val('');
+                $('#data_ini').val('');
+                $('#data_fin').val('');
+                $('#descricao').val('');
+            }
 
             //disponibilisa lista de usuarios para select.
             $.ajax({
@@ -133,8 +140,13 @@
                         $('#mensagem').html(data);
                     }
                 })
+                apaga_form()
                 return false;
             });
+
+            $('#cancelar').click(function(){
+                apaga_form();
+            })
             
         })
         

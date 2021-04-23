@@ -6,7 +6,7 @@
 	<head>
 		<meta charset="UTF-8">
 
-		<title>Compartilhamento de Contatos</title>
+		<title>Lista de Tarefas</title>
 		
 		<!-- jquery - link cdn -->
 		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -113,7 +113,7 @@
 	            <span class="icon-bar"></span>
 	          </button>
 	          <img src="imagens/agenda.png" />
-			  <a href="meus_dados.php">
+			  <a href="#">
                 Bem vindo(a)
 			  </a>
 	        </div>
